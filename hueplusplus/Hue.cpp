@@ -253,7 +253,8 @@ HueLight &Hue::getLight(int id) {
              type == "LTF002" || type == "LTC001" || type == "LTC002" ||
              type == "LTC003" || type == "LTC004" || type == "LTC011" ||
              type == "LTC012" || type == "LTD001" || type == "LTD002" ||
-             type == "LFF001" || type == "LTT001" || type == "LDT001") {
+             type == "LFF001" || type == "LTT001" || type == "LDT001" ||
+	     type == "LTA001") {
     // HueTemperatureLight
     HueLight light = HueLight(id, commands, simpleBrightnessStrategy,
                               simpleColorTemperatureStrategy, nullptr);
