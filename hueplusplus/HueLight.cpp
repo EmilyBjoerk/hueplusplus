@@ -36,7 +36,7 @@ bool HueLight::Off(uint8_t transition) {
 }
 
 bool HueLight::isOn() {
-  refreshState();
+  //refreshState();
   return state["state"]["on"].asBool();
 }
 

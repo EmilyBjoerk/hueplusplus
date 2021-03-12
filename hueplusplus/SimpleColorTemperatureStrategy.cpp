@@ -26,7 +26,7 @@
 
 bool SimpleColorTemperatureStrategy::setColorTemperature(
     unsigned int mired, uint8_t transition, HueLight &light) const {
-  light.refreshState();
+  //  light.refreshState();
   Json::Value request(Json::objectValue);
   if (transition != 4) {
     request["transitiontime"] = transition;

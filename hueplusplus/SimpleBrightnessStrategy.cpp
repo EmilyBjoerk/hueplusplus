@@ -26,7 +26,7 @@
 bool SimpleBrightnessStrategy::setBrightness(unsigned int bri,
                                              uint8_t transition,
                                              HueLight &light) const {
-  light.refreshState();
+  //light.refreshState();
   if (bri == 0) {
     if (light.state["state"]["on"] == true) {
       return light.OffNoRefresh(transition);
